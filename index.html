@@ -9,18 +9,23 @@
     <!-- daisy ui -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <!-- ionicon -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>g3-architects-resources</title>
      
 </head>
 <body>
     <!-- footer  -->
-     <footer class="  w-full bg-[#FFF4E6] ">
-        <nav class="p-5 bg-[#FFF4E6] shadow-md  w-250 md:w-full  ">
+     <footer class="  w-full bg-[#FFF4E6] mx-auto  ">
+        <nav class="p-5 bg-[#FFF4E6] shadow-md   w-250  sm:w-full md:w-full  ">
             <!-- parent div -->
-            <div class="sm:flex md:flex md:items-center md:justify-between md:mx-30">
+            <div class="   sm:flex sm:items-center sm:justify-between md:flex md:items-center md:justify-between md:mx-30">
                 <!-- chaild div -->
-                <div>
-                    <h1 class="font-bold text-xl cursor-pointer">G3 Architects</h1>
+                <div class="  flex justify-between items-center">
+                    
+                    <span class="font-bold text-xl cursor-pointer">G3 Architects</span>
+                    <span id="menu-btn" class="text-3xl cursor-pointer md:hidden block"><ion-icon name="menu-outline"></ion-icon></span>
                 </div  >
                 <!-- ul li -->
                  <ul class="md:flex md:items-center -z-1 md:z-auto absolute md:static   ">
@@ -29,8 +34,23 @@
                     <li class=" my-6 md:my-0 mx-4 hover:text-red-500 duration-500 cursor-pointer"><a href="#"></a>Content Us</li>
                     <li class=" my-6 md:my-0 mx-4 hover:text-red-500 duration-500 cursor-pointer"><a href="#"></a>Longin</li>
                  </ul>
+              
             </div>
+             <ul id="mobile-menu" class="hidden sm:hidden md:hidden px-4 pb-4">
+          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+          <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+             </ul>
         </nav>
+          <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
         <!-- footer second  -->
           <div class=" md:justify-center  md:items-center grid mx-auto ">
                 <!-- text  -->
@@ -48,10 +68,68 @@
          <!-- main -->
           <main class="container mx-auto ">
            
-          <section>
-            
+          <section class="mx-auto max-w-7xl w-full flex items-center gap-4">
+            <div class="max-w-7xl w-full  md:mt-20  md:mb-20 md:justify-center md:items-center md:gap-20 p-5">
+                <!-- imag -->
+                 <div class=" md:grid   grid grid-cols-1    justify-center    text-center md:grid-cols-2 gap-4 ">
+                    <img class="w-full " src="images/team1.png" alt="">
+                    <img class="w-full "  src="images/team2.png" alt="">
+                    <img class="w-full "   src="images/team3.png" alt="">
+                    <img class="w-full " src="images/team4.png" alt="">
+                 </div>
+                 <!-- text -->
+                 
+            </div>
+             <div class="">
+                    <h1 class="text-4xl   font-normal text-[#aaa] ">Quick list  <span class="text-stone-800">of Our</span> <br>  <span class="text-[#FF900E]">Features</span></h1>
+                    <p class="text-[#aaa] mt-4 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                    <button class="btn bg-[#FF900E] mt-4 text-white">Explore More</button>
+                  </div>
           </section>
-           </section>
+           
+          <section>
+            <!-- parent div -->
+            <div class="flex mx-auto max-w-7xl gap-20">
+                <!-- child div -->
+                 <div class=" flex-1">
+                    <div class="p-5">
+                        <h1 class="p-5 text-stone-800 font-bold text-5xl">Features you will <br> love & enjoy</h1>
+                        <p class="text-[#aaa] my-4 w-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                    </div>
+                    <!-- card div -->
+                    <div class=" ">
+                        <div class="bg-white shadow-lg my-4 p-5 w-lg">
+                            <h1 class="text-2xl text-[#131313] font-serif font-semibold">Dexktop & Mobile Version</h1>
+                            <p class="text-[#aaa]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised</p>
+                        </div>
+                        <div class="bg-white shadow-lg my-4 p-5 w-lg">
+                             <h1 class="text-2xl text-[#131313] font-serif font-semibold"> Drag & Drop Builder</h1>
+                            <p class="text-[#aaa]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                        <div class="bg-white shadow-lgmy-4 p-5 w-lg">
+                                <h1 class="text-2xl text-[#131313] font-serif font-semibold"> Awesome Modern Design</h1>
+                                <p class="text-[#aaa]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>                                
+                        </div>
+                        <div class="bg-white shadow-lg my-4 p-5 w-lg">
+                                 <h1 class="text-2xl text-[#131313] font-serif font-semibold"> Super Easy to Edit</h1>
+                            <p class="text-[#aaa]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- imag and card -->
+                 <div class="relative flex-1">
+                    <!-- img  -->
+                     <img class="  h-auto" src="images/architect.png" alt="">
+                     <!-- card -->
+                      <div class="absolute w-sm   bg-[#FF900E] h-50  top-175   items-center justify-center flex rounded-lg -left-20  ">
+                         <div>
+                        <h1>10+YEARS</h1>
+                        <P>Exprience</P>
+                         </div>
+                      </div>
+                 </div>
+            </div>
+          </section>
           </main>
 </body>
 </html>
